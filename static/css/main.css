@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: black;
+}
+
+p {
+    color: #fffdd0 !important;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 50px;
+    border: none;
+    transition: all 0.4s ease 0s;
+    margin-left: 30px;
+}
+
+form {
+    padding: 20px;
+    border-radius: 50px;
+    border: none;
+    margin-left: 30px;
+}
+
+.answerbutton {
+    background-color: #654321;
+    border: none;
+    color: #fffdd0;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.avatar {
+    width:  229px;
+    height: 320px;
+    object-fit: cover;
+}

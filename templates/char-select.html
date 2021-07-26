@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block head %}
+{% endblock %}
+
+
+{% block body %}
+
+<p>{{ data.question }}</p>
+<form action="/char" method="post">
+    <button name="char" type="submit" value="{{ data.id_0 }}"><img class="avatar" src="{{ data.avatar_0 }}" alt="{{ data.name_0 }}"></button>
+    <button name="char" type="submit" value="{{ data.id_1 }}"><img class="avatar" src="{{ data.avatar_1 }}" alt="{{ data.name_1 }}"></button>
+</form>
+
+{% endblock %}

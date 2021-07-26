@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block head %}
+{% endblock %}
+
+
+{% block body %}
+
+<div class="row">
+    <div class="column">
+        <p>Turn of {{ data.playername }}a</p>
+        <p>{{ data.question }}</p>
+        <form action="/process" method="post">
+            <button class = "answerbutton" name="answer" type="submit" value="{{ data.answer_1_key }}">{{ data.answer_1_value }}</button>
+            <button class = "answerbutton" name="answer" type="submit" value="{{ data.answer_2_key }}">{{ data.answer_2_value }}</button>
+        </form>
+    </div>
+    <div class="column">
+        <img class="avatar" src="{{ data.avatar }}" alt="{{ data.playername }}">
+    </div>
+</div>
+
+{% endblock %}

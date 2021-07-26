@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block head %}
+{% endblock %}
+
+
+{% block body %}
+
+<img src="./static/img/logo.jpg" alt="logo">
+<p>Select game mode</p>
+<form action="/mode" method="post">
+    <button class = "answerbutton" name="mode" type="submit" value="singleplayer">Single Player</button>
+    <button class = "answerbutton" name="mode" type="submit" value="hotseats">Hot Seats</button>
+    <!-- <button class = "answerbutton" name="mode" type="submit" value="multiplayer">Multiplayer</button>-->
+</form>
+
+{% endblock %}

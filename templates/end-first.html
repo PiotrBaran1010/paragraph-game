@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block head %}
+{% endblock %}
+
+
+{% block body %}
+
+<p>{{ data.playername }}</p>
+<p>{{ data.text }}</p>
+
+<form action="/loss" method="post">
+    <button name="continue" type="submit" value="Continue">Continue</button>
+</form>
+
+{% endblock %}
